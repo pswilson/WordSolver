@@ -2,7 +2,7 @@
 
 ### Intro
 
-This is a java implementation for a Word Solver. The basic problem is to find all possible words you could spell from a given set of letters. Not all letters must be used in the words but the words must be 2 letters or longer. The dictionary to check against is the Scrabble tournament word list (twl06.txt.)
+This is a java implementation for a Word Solver. The basic problem is to find all possible words you could spell from a given set of letters. Blanks/spaces given in the input set can be interpreted as any letter. Not all letters must be used in the words but the words must be 2 letters or longer. The dictionary to check against is the Scrabble tournament word list (twl06.txt.)
 
 ### Solution Overview
 
