@@ -20,7 +20,7 @@ The dictionary used here is a map with each entry key being a word and/or a pref
 
 The project has been kept simple (flat) and there's nothing special required run the code other than having the go tools installed.
 
-You can locate the code whereever you'd like in your go tree or simply run the code such as:
+You can locate the code wherever you'd like in your go tree or simply run the code such as:
 
     go run *.go abc
 

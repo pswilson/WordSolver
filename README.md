@@ -8,7 +8,7 @@ This repository (will) contain various implementations of a Word Solver. The bas
 
 This project started as a basic coding exercise. Nothing really special, but an opportunity to experiment and implement something in a variety of languages.
 
-There are basic implementations in Java and Python so far. Each implementation is self contained in it's own directory. I have a few other implementations I'll add soon and I plan on doing the implementation in a variety of other languages as well (just for fun) (Haskell, Rust, Go, C, Javascript, ...).
+There are basic implementations in Java, Python, and Go so far. Each implementation is self contained in it's own directory. I have a few other implementations I'll add soon and I plan on doing the implementation in a variety of other languages as well (just for fun) (Haskell, Rust, C, Javascript, ...).
 
 ### Project Layout
 
