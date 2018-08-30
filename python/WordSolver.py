@@ -35,15 +35,19 @@ if len(sys.argv) < 2:
 letters = sys.argv[1]
 
 # Pass in the dictionary file name since we don't get the path correct if using the default
+startTime = datetime.datetime.now()
 d = Dictionary.Dictionary('./twl06.txt')
+endTime = datetime.datetime.now()
+delta = endTime - startTime
+print('\nDictionary load took {}'.format(delta))
+
 solver = BasicSolver.BasicSolver(d)
 
 startTime = datetime.datetime.now()
 words = solver.solve(letters)
 endTime = datetime.datetime.now()
 delta = endTime - startTime
-print('\nApproach took {} milliseconds (or {})'.format(
-    int(delta.microseconds/1000), delta))
+print('\nApproach took {}'.format(delta))
 
 # words = s.solve(letters.lower())
 print('\nGiven "{}", you could make {} words:'.format(letters, len(words)))

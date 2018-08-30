@@ -29,6 +29,9 @@ class Dictionary:
 
 
     def add_word(self, word: str):
+        if len(word) == 0:
+            return
+
         # Normalize case before we put things in the dictionary
         word = word.upper()
 
@@ -38,8 +41,11 @@ class Dictionary:
             p = word[:i]
             if not p in self.data:
                 self.data[p] = _DictionaryNode()
+
+            if not self.data[p].is_prefix:
                 self.prefix_count += 1
-            self.data[p].is_prefix = True
+                self.data[p].is_prefix = True
+
         # make sure we add the word itself and set the word flag
         if not word in self.data:
             self.data[word] = _DictionaryNode()
